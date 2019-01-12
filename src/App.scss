@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+/*  responsive font-size */
+@function get-vmin($target) {
+  $vmin-context: (1440 * 0.01) * 1px;
+  @return ($target/$vmin-context) * 2.3vmin;
+}
+
+/* Fonst-family */
+$PTSerif : 'PT Serif', serif !important;
+$Montserrat: "Montserrat" !important;
+$bold: bold !important;
+
+.header {
+  background: url(./img/bg.png);
+  background-size: 100%;
+  background-color: #d63324;
+  min-height: 43.125em;
+  div p {
+    font-size: get-vmin(90px) !important;
+    line-height: get-vmin(80px) !important;
+    color: #130e27 !important;
+    font-family: $Montserrat;
+    font-weight: $bold;
+    span {
+      color: #ffffff !important;
+    }
+  }
+  div p ~ span {
+    font-size: get-vmin(20px);
+    line-height: get-vmin(28px);
+    color: #ffffff;
+    font-family: $PTSerif;
+  }
+}
+
+ul li a {
+  font-size: 1rem !important;
+  color: #ffffff !important;
+  font-family: $Montserrat;
+  &:hover {
+    border-radius: 5px;
+    background-color: #130e27;
+  }
+}
+
+/* mainpart */
+
+.mainpart {
+  p {
+    font-size: get-vmin(50px);
+    letter-spacing: -1px;
+    line-height: get-vmin(80px);
+    color: #c62314;
+    font-family: "Couture";
+    font-weight: $bold;
+  }
+}
+
+.card {
+  .price_card{
+    width: 150px;
+    height: 150px;
+  }
+  .card-body {
+    padding: 1rem !important;
+  }
+  .card-text {
+    font-size: get-vmin(20px);
+    line-height: get-vmin(28px);
+    color: #161616;
+    font-family:$PTSerif;
+    text-align: left;
+  }
+}
+
+/* Storyblock */
+
+.storyblock {
+  background-color: #130e27;
+  min-height: 100px;
+  p {
+    font-size: get-vmin(20px) !important;
+    line-height: get-vmin(28px);
+    color: #ffffff !important;
+    font-family:$PTSerif;
+  }
+  button {
+    border-radius: 5px;
+    background-color: #c62314 !important;
+    font-size: get-vmin(22px);
+    line-height: get-vmin(28px);
+    color: #ffffff;
+    font-family: $Montserrat;
+    text-align: center;
+  }
+}
+
+/* Pricingblock */
+
+.pricingblock {
+  background-color: #efefef;
+  h1 {
+    font-size: get-vmin(50px);
+    letter-spacing: -1px;
+    line-height: get-vmin(80px);
+    color: #130e27;
+    font-family: $Montserrat;
+    font-weight: $bold;
+  }
+}
+
+.started,
+.business,
+.professional {
+  h4 {
+    font-size: get-vmin(22px);
+    line-height: get-vmin(28px);
+    color: #161616;
+    font-family: $PTSerif;
+    text-align: center;
+  }
+  h1 {
+    font-size: get-vmin(60px);
+    letter-spacing: -1px;
+    line-height: get-vmin(80px);
+    color: #c62314;
+    font-family: $Montserrat;
+    font-weight: $bold;
+  }
+  p {
+    font-size: get-vmin(20px);
+    letter-spacing: 0px;
+    line-height: get-vmin(28px);
+    color: #161616;
+    font-family: $PTSerif;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .btn {
+    border-radius: 4px;
+    background-color: #130e27 !important;
+    border: none;
+    font-size: get-vmin(22px);
+    color: #ffffff !important;
+    font-family: $Montserrat;
+    text-align: center;
+  }
+  .popular {
+    background-color: #c62314 !important;
+  }
+}
+
+/* Testemonials */
+
+.testemonials {
+  h1 {
+    font-size: get-vmin(50px);
+    letter-spacing: -1px;
+    line-height: get-vmin(80px);
+    color: #130e27;
+    font-family: $Montserrat;
+    font-weight: $bold;
+  }
+  .blockquote p {
+    font-size: get-vmin(20px);
+    letter-spacing: 0px;
+    line-height: get-vmin(28px);
+    color: #161616;
+    font-family: $PTSerif;
+  }
+  &-blockquote-footer {
+    font-size: get-vmin(20px);
+    line-height: get-vmin(28px);
+    color: #130e27;
+    font-family: $Montserrat;
+    margin: 0;
+  }
+  .gallery {
+    font-size: get-vmin(50px);
+    letter-spacing: -1px;
+    color: #c62314;
+    font-family: $Montserrat;
+    font-weight: $bold;
+  }
+}
+
+/* footer */
+
+footer {
+  background-color: #130e27;
+  h6 {
+    font-size: get-vmin(20px);
+    line-height: get-vmin(22px);
+    color: #ffffff;
+    font-family: $PTSerif;
+  }
+}
