@@ -15,17 +15,16 @@ class App extends Component {
           <div className="container">
             <nav className="navbar navbar-expand-sm pt-5 mb-5 navbar-dark">
               {/*  <!-- Brand --> */}
-              <div>
-                <ul className="navbar-nav">
-                  <li className="nav-item font-weight-bold">
-                    <img
-                      src={require("./img/logo.png")}
-                      className="img-fluid"
-                      alt="Logo"
-                    />
-                  </li>
-                </ul>
-              </div>
+
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <img
+                    src={require("./img/logo.png")}
+                    className="img-fluid"
+                    alt="Logo"
+                  />
+                </li>
+              </ul>
 
               {/*  <!-- Toggler/collapsibe Button --> */}
               <button
@@ -103,7 +102,7 @@ class App extends Component {
           </div>
           <div className="container pt-5">
             <div className="row">
-              <div className="col mb-5">
+              <div className="col-sm-12 col-lg-7 mb-5">
                 {" "}
                 <p className="mb-5">
                   SELL YOUR <br />
@@ -115,8 +114,50 @@ class App extends Component {
                   industry's standard dummy text ever since the 1500s
                 </span>
               </div>
+              <div className="col-sm-12 col-lg-5 mb-5">
+                <div className="card bg-light p-3">
+                  <h5 className="text-center mb-3">REQUEST A QUOTE</h5>
+                  <form action="#">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Full name"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="email"
+                        className="form-control"
+                        placeholder="Email Adress"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Phone number"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Country"
+                      />
+                    </div>
+                    <div className="form-group form-check">
+                      <input className="form-check-input" type="checkbox" />{" "}
+                      I accept the terms & conditions
+                    </div>
+
+                    <button type="submit" className="btn btn-primary d-block mx-auto">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
             </div>
-            {/* */}
           </div>
         </div>
         {/* mainpart */}
@@ -193,13 +234,13 @@ class App extends Component {
           <div className="container ">
             <div className="row p-4">
               <div className="col-lg-8 col-sm-12">
-                <p className='text-justify'>
+                <p className="text-justify">
                   We are in business for over 6 years providing amazing services
                   to client <br /> and people love them to the core. View our
                   story to know more.
                 </p>
               </div>
-              <div className="col-lg-4 col-sm-12 d-flex flex-row justify-content-center">
+              <div className="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
                 <button className="btn btn-danger">Our story</button>
               </div>
             </div>
@@ -346,7 +387,7 @@ class App extends Component {
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 order-1 order-sm-2">
                 <img
-                  className="img-responsive p-2"
+                  className="img-fluid p-2"
                   src={require("./img/logo.png")}
                   alt="Logo"
                 />

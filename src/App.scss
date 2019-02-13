@@ -4,7 +4,11 @@
 /*  responsive font-size */
 @function get-vmin($target) {
   $vmin-context: (1440 * 0.01) * 1px;
-  @return ($target/$vmin-context) * 2.3vmin;
+  @return ($target/$vmin-context) * 2.6vmin;
+}
+
+@function content($value) {
+  @return $value / 16px * .9rem;
 }
 
 /* Fonst-family */
@@ -28,8 +32,7 @@ $bold: bold !important;
     }
   }
   div p ~ span {
-    font-size: get-vmin(20px);
-    line-height: get-vmin(28px);
+    font-size: content(20px);
     color: #ffffff;
     font-family: $PTSerif;
   }
@@ -49,9 +52,8 @@ ul li a {
 
 .mainpart {
   p {
-    font-size: get-vmin(50px);
+    font-size: content(50px);
     letter-spacing: -1px;
-    line-height: get-vmin(80px);
     color: #c62314;
     font-family: "Couture";
     font-weight: $bold;
@@ -67,8 +69,7 @@ ul li a {
     padding: 1rem !important;
   }
   .card-text {
-    font-size: get-vmin(20px);
-    line-height: get-vmin(28px);
+    font-size: content(20px);
     color: #161616;
     font-family:$PTSerif;
     text-align: left;
@@ -81,16 +82,14 @@ ul li a {
   background-color: #130e27;
   min-height: 100px;
   p {
-    font-size: get-vmin(20px) !important;
-    line-height: get-vmin(28px);
+    font-size: content(20px) !important;
     color: #ffffff !important;
     font-family:$PTSerif;
   }
   button {
     border-radius: 5px;
     background-color: #c62314 !important;
-    font-size: get-vmin(22px);
-    line-height: get-vmin(28px);
+    font-size: content(22px);
     color: #ffffff;
     font-family: $Montserrat;
     text-align: center;
@@ -102,9 +101,8 @@ ul li a {
 .pricingblock {
   background-color: #efefef;
   h1 {
-    font-size: get-vmin(50px);
+    font-size: content(50px);
     letter-spacing: -1px;
-    line-height: get-vmin(80px);
     color: #130e27;
     font-family: $Montserrat;
     font-weight: $bold;
@@ -115,24 +113,22 @@ ul li a {
 .business,
 .professional {
   h4 {
-    font-size: get-vmin(22px);
-    line-height: get-vmin(28px);
+    font-size: content(22px);
     color: #161616;
     font-family: $PTSerif;
     text-align: center;
   }
   h1 {
-    font-size: get-vmin(60px);
+    font-size: content(60px);
     letter-spacing: -1px;
-    line-height: get-vmin(80px);
     color: #c62314;
     font-family: $Montserrat;
     font-weight: $bold;
   }
   p {
-    font-size: get-vmin(20px);
+    font-size: content(20px);
     letter-spacing: 0px;
-    line-height: get-vmin(28px);
+    line-height: content(28px);
     color: #161616;
     font-family: $PTSerif;
     text-align: center;
@@ -142,7 +138,7 @@ ul li a {
     border-radius: 4px;
     background-color: #130e27 !important;
     border: none;
-    font-size: get-vmin(22px);
+    font-size: content(22px);
     color: #ffffff !important;
     font-family: $Montserrat;
     text-align: center;
@@ -156,29 +152,26 @@ ul li a {
 
 .testemonials {
   h1 {
-    font-size: get-vmin(50px);
+    font-size: content(50px);
     letter-spacing: -1px;
-    line-height: get-vmin(80px);
     color: #130e27;
     font-family: $Montserrat;
     font-weight: $bold;
   }
   .blockquote p {
-    font-size: get-vmin(20px);
+    font-size: content(20px);
     letter-spacing: 0px;
-    line-height: get-vmin(28px);
     color: #161616;
     font-family: $PTSerif;
   }
   &-blockquote-footer {
-    font-size: get-vmin(20px);
-    line-height: get-vmin(28px);
+    font-size: content(20px);
     color: #130e27;
     font-family: $Montserrat;
     margin: 0;
   }
   .gallery {
-    font-size: get-vmin(50px);
+    font-size: content(50px);
     letter-spacing: -1px;
     color: #c62314;
     font-family: $Montserrat;
@@ -191,8 +184,7 @@ ul li a {
 footer {
   background-color: #130e27;
   h6 {
-    font-size: get-vmin(20px);
-    line-height: get-vmin(22px);
+    font-size: content(20px);
     color: #ffffff;
     font-family: $PTSerif;
   }
